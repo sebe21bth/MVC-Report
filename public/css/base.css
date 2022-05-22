@@ -17,6 +17,11 @@ body {
 }
 
 .sebbe {
-    height: 250px;
-    width: 250px;
+    height: 15rem;
+    margin-top: 1rem;
+}
+
+.symfony {
+    height: 6rem;
+    margin-top: 1rem;
 }
