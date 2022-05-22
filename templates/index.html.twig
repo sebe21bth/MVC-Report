@@ -1,0 +1,21 @@
+{# templates/index.html.twig #}
+
+<html>
+    <head>
+        <link href="css/base.css" rel="stylesheet"/>
+    </head>
+    <body>
+        {% block header %}
+            {% include ('header.html.twig') %}
+        {% endblock %}
+
+        <div class="page-wrapper">
+            <img src="img/sebbe.jpg" class="sebbe">
+            <h1>Hi!</h1>
+            <p>This is me! My name is sploob and i like programming and climbing, sometimes i even go outside to bike :D</p>
+        </div>
+
+        {% block footer %}
+            {% include ('footer.html.twig') %}
+        {% endblock %}
+</html>

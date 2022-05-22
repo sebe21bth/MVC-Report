@@ -1,0 +1,22 @@
+{# templates/about.html.twig #}
+<html>
+    <head>
+        <link href="css/base.css" rel="stylesheet"/>
+    </head>
+    <body>
+        {% block header %}
+            {% include ('header.html.twig') %}
+        {% endblock %}
+        
+
+        <div class="page-wrapper">
+            <h1>Welcome to mvc</h1>
+            <p>The course mvc (Objectoriented webbtechnologies) focuses on objectoriented programming tecniques in PHP.</p>
+            <p>Classical objectoriented constructs are handled together with objectoriented programming in webbased frameworks and databases.</p>
+        </div>
+
+        {% block footer %}
+            {% include ('footer.html.twig') %}
+        {% endblock %}
+    </body>
+</html>
