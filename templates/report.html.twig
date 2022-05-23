@@ -1,45 +1,56 @@
-{# templates/report.html.twig #}
-<html>
-    <head>
-        <link href="css/base.css" rel="stylesheet"/>
-        <link href="css/report.css" rel="stylesheet"/>
-    </head>
-    <body>
-        {% block header %}
-            {% include ('header.html.twig') %}
-        {% endblock %}
-        
 
-        <div class="page-wrapper">
-            <h1>Reports</h1>
-            <div class="r-container">
-                <div class="report">
-                    <h3>Kmom01</h3>
-                    <p>ooga booga1</p>
-                    <p>ooga booga1</p>
-                    <p>ooga booga1</p>
-                    <p>ooga booga1</p>
-                    <p>ooga booga1</p>
-                    <p>ooga booga1</p>
-                    <p>ooga booga1</p>
-                </div>
-            </div>
-            <div class="r-container">
-                <div class="report">
-                    <h3>Kmom02</h3>
-                    <p>ooga booga1</p>
-                    <p>ooga booga1</p>
-                    <p>ooga booga1</p>
-                    <p>ooga booga1</p>
-                    <p>ooga booga1</p>
-                    <p>ooga booga1</p>
-                    <p>ooga booga1</p>
-                </div>
-            </div>
+{% extends "base.html.twig" %}
+{% block title %}Report{% endblock %}
+
+{% block content %}
+
+<div class="page-wrapper">
+    <h1>Reports</h1>
+    <div class="r-container">
+        <div class="report">
+            <h3 id="kmom01">Kmom01</h3>
+            
+            <p>Det här kursmoment tycker jag har gått rätt så bra, det var förvirrande i början med symfoni och twig samspelet. Men efter lite arbetande samt efter att ha gjort 
+övningarna så kändes det bättre och mer förståeligt att arbeta med symfoni och twig ihop. jag har förut arbetat med objektorienterad programmering i både C#, c++ 
+och python där jag byggt en mängd olika spel eller små test programm. varav några går från lätta "kort system" upp till mer komplexa lager system för spel med 
+olika komponenter som jobbar i samspel med varandra. En klass kan definieras som en wrapper för olika metoder och properties, dessa kan struktureras upp/skapas 
+genom att använda sig av "class" en klass är samtidigt som en template för objekt som i sin tur är instantioner av klasser då. metoder är funktioner som man kan 
+göra via en objekt av en klass och properties är som klassens status eller egenskaper.</p>
+
+
+symfoni verkar vara rätt så logiskt när man väl förstår vad det är och hur det funkar, däremot så tyckte jag inte om så mycket deras dokumentation, twig är 
+skönt att använda, det är rätt så enkelt, simpelt och logiskt.
+
+PHP the right way verkar vara helt ok, dom har lite intro grejer och sedan lite mer specifika ämnen inom hur man borde arbeta och skriva inom PHP samt hur man kan 
+hosta en PHP server.
+
+i denna kmom har jag fått lära mig om ramverket Symfony samt fått vetskapen om att "PHP the right way" existerar, utöver det har jag fått läsa om hur klasser funkar 
+inom PHP men jag hade redan en grundlig vetskap om klasser och objekt från andra språk.
+
+    Berätta kort om dina förkunskaper och tidigare erfarenheter kring objektorientering.--
+
+    Berätta kort om PHPs modell för klasser och objekt. Vilka är de grunder man behöver veta/förstå för att kunna komma igång och skapa sina första klasser?--
+
+    Reflektera kort över den kodbas, koden, strukturen som användes till uppgiften me/report, hur uppfattar du den?
+
+    Med tanke på artikeln “PHP The Right Way”, vilka delar in den finner du extra intressanta och värdefulla? Är det några särskilda områden som du känner att du vill veta mer om? Lyft fram några delar av artikeln som du känner mer värdefulla.
+
+    Vilken är din TIL för detta kmom?
+
         </div>
+    </div>
+    <div class="r-container">
+        <div class="report">
+            <h3>Kmom02</h3>
+            <p>ooga booga1</p>
+            <p>ooga booga1</p>
+            <p>ooga booga1</p>
+            <p>ooga booga1</p>
+            <p>ooga booga1</p>
+            <p>ooga booga1</p>
+            <p>ooga booga1</p>
+        </div>
+    </div>
+</div>
 
-        {% block footer %}
-            {% include ('footer.html.twig') %}
-        {% endblock %}
-    </body>
-</html>
+{% endblock %}
